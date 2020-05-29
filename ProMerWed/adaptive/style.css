@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	background: #EAE7D8;
+}
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin: auto;
+}
+.portfolio-item {
+	width: 300px;
+	margin: 50px auto;
+}
+.portfolio-wrapper {
+	position: relative;
+	background: #CFC9BA;
+}
+.portfolio-wrapper:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -29px;
+	left: 0;	
+	width: 105%;
+	height: 50px;
+	background: #EAE7D8;
+	transform: rotate(-4deg);
+}
+.heading  h3 {  
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 20px 0;
+}
+.thumbnail {
+	position: relative;
+	padding-bottom: 98%;
+	overflow: hidden;
+}
+.thumbnail img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	cursor: pointer;  
+	transform: translateY(0%);
+	transition: 16s;
+}
+.thumbnail:hover img {
+	transform: translateY(-100.5%);
+}
+.tablet {
+	width: 600px;
+}
